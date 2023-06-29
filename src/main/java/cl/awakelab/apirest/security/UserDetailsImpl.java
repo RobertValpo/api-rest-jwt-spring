@@ -8,7 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.Collections;
 
-@AllArgsConstructor // Anotación de Lombok para generar un constructor con todos los atributos de la clase
+@AllArgsConstructor //* Anotación de Lombok para generar un constructor con todos los atributos de la clase
 public class UserDetailsImpl implements UserDetails {
 
   private final Cliente cliente; // @AllArgsConstructor generará un constructor que recibe un cliente
@@ -48,7 +48,7 @@ public class UserDetailsImpl implements UserDetails {
     return true; // Devuelve si el usuario está habilitado
   }
 
-  // Método personalizado para devolver el nombre del cliente
+  //* */ Método personalizado para devolver el nombre del cliente
   public String getNombre() {
     return cliente.getNombre();
   }

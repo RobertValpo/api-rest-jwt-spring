@@ -27,7 +27,11 @@ public class Cliente implements Serializable {
   private String apellido;
   @Column(name="email", nullable=false, length=50, unique = true)
   private String email;
+
+  private String password;
   
+  
+
   @Column(name="create_at")
   @Temporal(TemporalType.DATE)
   private Date createAt;
@@ -75,6 +79,14 @@ public class Cliente implements Serializable {
 
   public void setCreateAt(Date createAt) {
     this.createAt = createAt;
+  }
+
+  public String getPassword() {
+    return password;
+  }
+
+  public void setPassword(String password) {
+    this.password = password;
   }
 
   private static final long serialVersionUID = 1L;
