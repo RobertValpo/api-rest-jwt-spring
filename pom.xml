@@ -53,6 +53,13 @@
 			<artifactId>jjwt-jackson</artifactId>
 			<version>0.11.5</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.22</version> <!-- Utiliza la versión más reciente disponible -->
+			<scope>provided</scope>
+		</dependency>
 		
 	</dependencies>
 
